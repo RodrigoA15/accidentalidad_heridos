@@ -11,7 +11,7 @@ export const Hola = () => {
     var latlng = data[i];
     L.marker(latlng, {
       icon: L.icon({
-        iconUrl: "./pasador-de-ubicacion.png",
+        iconUrl: "./location_15016015.png",
         iconSize: [38, 35],
       }),
     })
