@@ -9,15 +9,7 @@ export const Hola = () => {
 
   for (var i = 0; i < data.length; i++) {
     var latlng = data[i];
-    L.marker(latlng, {
-      icon: L.icon({
-        iconUrl: "./location_15016015.png",
-        iconSize: [38, 35],
-      }),
-    })
-      .addTo(map)
-      .bindPopup(`dataa ${latlng}`)
-      .openPopup();
+    L.marker(latlng).addTo(map).bindPopup(`dataa ${latlng}`).openPopup();
   }
   map.fitBounds(L.latLngBounds([data]));
 
